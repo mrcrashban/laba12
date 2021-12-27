@@ -1,0 +1,39 @@
+<h3>Все итерации</h3>
+<p>Если написано yes, значит на этой итерации было найдено одно из чисел, подходящих под ответ</p>
+<table border="1">
+  <tr>
+    <th>Iteration number</th>
+    <th>Result</th>
+  </tr>
+  <% @arr.each_with_index do |y, i|%>
+    <tr>
+      <td><%= i + 1 %></td>
+      <td><%= y %></td>
+    </tr>
+  <% end %>
+</table>
+<h3>Все факториалы, представимые в виде произведения трёх идущих подряд чисел</h3>
+<table border = '1'>
+  <tr>
+    <th>Factorial</th>
+    <th>First number</th>
+    <th>Second number</th>
+    <th>Third number</th>
+  </tr>
+  <% @array.each_with_index  do |x, i|%>
+    <tr>
+      <td>
+        <%= x %>
+      </td>
+      <td>
+        <%= @array2[i] %>
+      </td>
+      <td>
+        <%= @array2[i] + 1 %>
+      </td>
+      <td>
+        <%= @array2[i] + 2 %>
+      </td>
+    </tr>
+  <% end %>
+</table>
